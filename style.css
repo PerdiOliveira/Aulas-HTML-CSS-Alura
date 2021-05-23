@@ -1,0 +1,48 @@
+.tit-princ{
+   padding-left: 20px;
+}
+.sobre{
+    background-color: gray;
+    margin: 0%;
+    padding: 30px;
+}
+#banner{
+    width: 100%;
+    margin: 0px;
+}
+
+.tit-cent{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+#mission{
+    font-size: 20px; 
+    text-align: center
+}
+
+em strong{
+    color: coral;
+}
+
+.itens{
+    font-style: italic;
+}
+
+.beneficios{
+    background-color: white;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15%;
+    width: 20%;
+}
+.imgben{
+    width: 50%;
+}

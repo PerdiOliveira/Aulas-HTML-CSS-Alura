@@ -1,0 +1,99 @@
+header{
+    background-color: rgb(194, 69, 110);
+    padding: 20px 0; /*bota um espaçamento interno pra nao ficar grudado nas margens*/
+}
+
+.nav{
+    position: relative; /*posição relativo, pois quero que ela levante a classe*/
+    width: 940px; /*faz a classe ter uma largura fixa*/
+    margin: 0 auto; /*centraliza a classe*/
+}
+
+nav{
+    position: absolute; /*a posição absoluta, faz com que o item salte para frente, pensando no ponto de vista do leitor, fica absoluto em relação a pagina*/
+    top: 120px;
+    right: 0;
+    
+    
+}
+
+nav li{
+    
+    display: inline;
+    margin: 0 0 0 15px; /*topo direita baixo esquerda*/
+   
+}
+
+nav a{
+    text-transform: uppercase; /*deixa tudo em maiusculo*/
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*tira toda a decoração do link, o underline por exemplo*/
+}
+
+nav a:hover{  /*quando passa o mouse em cima dos links de nav*/
+    color:  whitesmoke; /*eles ficam brancos*/
+    text-decoration: underline; /*o underline volta*/
+
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*cima/baixo direita/esquerda*/
+
+
+}
+.produtos li{
+    display: inline-block; /*ocupam apenas o tamanho do bloco dele, e ficam um do lado do outro*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background-color: rgb(194, 69, 110);*/
+    margin: 0 1.5%; /* separando as caixinhas dos produtos*/
+    padding: 30px 20px; /*colocando espaço na legenda pra soltar dos canto e de cima e baixo*/
+    box-sizing: border-box; /*specifica o comportamento da largura e altura da caixa*/
+    border: 2px solid rgb(194, 69, 110);
+    border-radius: 20px; /*define a borda da borda*/
+    
+}
+
+.produtos li:hover{ /*quando passa o mouse em cima dos produtos*/
+    border-color: black; /*muda a cor da borda pra preto*/
+
+}
+
+.produtos li:hover h2{ /*quando passa o mouse em cima dos produtos*/
+    font-size: 35px;
+    
+}
+.produtos li:active{ /*quando fica clicado o mouse em cima dos produtos*/
+    border-color: rgb(61, 186, 145); /*muda a cor da borda pra preto*/
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.prod-desc{
+    font-size: 18px;
+}
+
+.prod-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg2.jpg);
+    padding: 40px 0px;
+}
+
+.copyright{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: 20px;
+
+}
