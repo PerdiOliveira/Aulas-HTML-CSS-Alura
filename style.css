@@ -1,48 +1,180 @@
-.tit-princ{
-   padding-left: 20px;
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: linear-gradient(rgb(194, 69, 110), white);
+    padding: 20px 0; /*bota um espaçamento interno pra nao ficar grudado nas margens*/
+}
+
+.nav{
+    position: relative; /*posição relativo, pois quero que ela levante a classe*/
+    width: 940px; /*faz a classe ter uma largura fixa*/
+    margin: 0 auto; /*centraliza a classe*/
+}
+
+nav{
+    position: absolute; /*a posição absoluta, faz com que o item salte para frente, pensando no ponto de vista do leitor, fica absoluto em relação a pagina*/
+    top: 120px;
+    right: 0;
+    
+    
+}
+
+nav li{
+    
+    display: inline;
+    margin: 0 0 0 15px; /*topo direita baixo esquerda*/
+   
+}
+
+nav a{
+    text-transform: uppercase; /*deixa tudo em maiusculo*/
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*tira toda a decoração do link, o underline por exemplo*/
+}
+
+nav a:hover{  /*quando passa o mouse em cima dos links de nav*/
+    color:  whitesmoke; /*eles ficam brancos*/
+    text-decoration: underline; /*o underline volta*/
+
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*cima/baixo direita/esquerda*/
+
+
+}
+.produtos li{
+    display: inline-block; /*ocupam apenas o tamanho do bloco dele, e ficam um do lado do outro*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background-color: rgb(194, 69, 110);*/
+    margin: 0 1.5%; /* separando as caixinhas dos produtos*/
+    padding: 30px 20px; /*colocando espaço na legenda pra soltar dos canto e de cima e baixo*/
+    box-sizing: border-box; /*specifica o comportamento da largura e altura da caixa*/
+    border: 2px solid rgb(194, 69, 110);
+    border-radius: 20px; /*define a borda da borda*/
+    
+}
+
+.produtos li:hover{ /*quando passa o mouse em cima dos produtos*/
+    border-color: black; /*muda a cor da borda pra preto*/
+
+}
+
+.produtos li:hover h2{ /*quando passa o mouse em cima dos produtos*/
+    font-size: 35px;
+    
+}
+.produtos li:active{ /*quando fica clicado o mouse em cima dos produtos*/
+    border-color: rgb(61, 186, 145); /*muda a cor da borda pra preto*/
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.prod-desc{
+    font-size: 18px;
+}
+.prod-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    background: url(bg2.jpg);
+    padding: 40px 0px;
+}
+.copyright{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: 20px;
+
+}
+/* css página principal */
+.banner{
+    width: 100%;
+}
+.titprincipal{
+    text-align: center;
+    font-size: 2em; /*2 vezes o tamanho básico*/
+    margin: 0 0 1em;
+    clear:left;
 }
 .sobre{
-    background-color: gray;
-    margin: 0%;
-    padding: 30px;
+    padding: 3em 0;
+    background: linear-gradient(white,#FEFEFE);
+    width: 50%;
+	margin: 0 auto;
 }
-#banner{
-    width: 100%;
-    margin: 0px;
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
-
-.tit-cent{
-    text-align: center;
+.sobre p{
+    margin: 0 0 1em;
 }
-
-p{
-    text-align: center;
+.sobre strong{
+    font-weight: bold;
 }
-
-#mission{
-    font-size: 20px; 
-    text-align: center
-}
-
-em strong{
-    color: coral;
-}
-
-.itens{
+.sobre em{
     font-style: italic;
+}
+.mapa{
+    padding: 3em 0;
+    background: #fefefe;   
+}
+.mapacont{
+    width: 50%;
+	margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
 }
 
 .beneficios{
-    background-color: white;
-    padding: 20px;
+    padding: 3em 0;
+    background: linear-gradient(#fefefe 20%, rgb(194, 69, 110), black )
 }
 
-ul{
+.conteudo-ben{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-ben{
+    width: 40%;
     display: inline-block;
     vertical-align: top;
-    margin-right: 15%;
-    width: 20%;
 }
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:before{
+    content: "🗸 ";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
 .imgben{
-    width: 50%;
+    width: 60%;
+}
+
+
+.video{
+    width: 560px;
+    margin: 2em auto;
 }
