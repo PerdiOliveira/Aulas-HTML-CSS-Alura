@@ -1,3 +1,7 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 main{
     width: 50%;
     margin: 0 auto;
@@ -56,4 +60,10 @@ thead{
 td, th{
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px){
+    .enviar, .inputpadrao{
+        width: 100%;
+    }
 }
