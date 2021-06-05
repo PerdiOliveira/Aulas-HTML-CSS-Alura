@@ -1,16 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet"/>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <title>Fruta & Fruto</title>
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
-        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link href="./assets/css/normalize.css" rel="stylesheet"/>
+        <link href="./assets/css/reset.css" rel="stylesheet"/>
+        <link href="./assets/css/cabecalho.css" rel="stylesheet"/>
+        <link href="./assets/css/banner.css" rel="stylesheet"/>
+        <link href="./assets/css/sobre.css" rel="stylesheet"/>
+        <link href="./assets/css/receitas.css" rel="stylesheet"/>
+        <link href="./assets/css/quemSomos.css" rel="stylesheet"/>
+        <link href="./assets/css/rodape.css" rel="stylesheet"/>
     </head>
 
     <body>
+
+        <header class="cabecalho">
+            <img class="cabecalho__logo"  src="assets/img/logo.jpg" alt="logo da fruta e fruto" class="cabecalho__logo">
+            <nav class="cabecalho__navegacao">
+                <ul class="cabecalho__navegacao-lista">
+                    <li class="cabecalho__navegacao-lista-item"><a class="cabecalho__navegacao-lista-item-link ativo" href="#">início</a></li>
+                    <li class="cabecalho__navegacao-lista-item"><a class="cabecalho__navegacao-lista-item-link" href="#">receitas</a></li>
+                    <li class="cabecalho__navegacao-lista-item"><a class="cabecalho__navegacao-lista-item-link" href="#">quem somos</a></li>
+                    <li class="cabecalho__navegacao-lista-item"><a class="cabecalho__navegacao-lista-item-link" href="#">comunidade</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <img  class="banner__imagem" src="assets/img/banner.jpg" alt="">
+            <h2 class="banner__titulo"> Reaproveite melhor os alimentos! </h2>
+        </section>
+
+        <section class="sobre">
+            <h2 class="sobre__titulo">Receitas para economizar e ganhar saúde</h2>
+            <h3 class="sobre__descricao">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</h3>
+        </section>
+
+        <section class="receitas">
+            <div class="receitas__conteudo">
+                <div class="receitas__card">
+                    <img src="/assets/img/receitas/tigela-de-abacate.jpg" alt="tigela de abacate" class="receitas__card-imagem">
+                    <div class="receitas__card-corpo">
+                        <div class="receitas__card-cabecalho">
+                            <h4 class="receitas__card-titulo">Tigela de Abacate</h4>
+                        </div>
+                        <div class="receitas__card-descricao">
+                            Receita refrescante e cheia de vitaminas para seu café da manhã.
+                        </div>
+                        <button class="receitas__botao">Ver receita</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="receitas__conteudo">
+                <div class="receitas__card">
+                    <img src="assets/img/receitas/salada-de-kiwi.jpg" alt="salada de kiwi" class="receitas__card-imagem">
+                    <div class="receitas__card-corpo">
+                        <div class="receitas__card-cabecalho">
+                            <h4 class="receitas__card-titulo">Salada de Kiwi</h4>
+                        </div>
+                        <div class="receitas__card-descricao">
+                            Receita refrescante e cheia de vitaminas para seu café da manhã
+                        </div>
+                        <button class="receitas__botao">Ver receita</button>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas__conteudo">
+                <div class="receitas__card">
+                    <img src="assets/img/receitas/mix-de-vegetais.jpg" alt="mix de vegetais" class="receitas__card-imagem">
+                    <div class="receitas__card-corpo">
+                        <div class="receitas__card-cabecalho">
+                            <h4 class="receitas__card-titulo">Mix de Vegetais</h4>
+                        </div>
+                        <div class="receitas__card-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</div>
+                        <button href="" class="receitas__botao">Ver receita</button>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas__conteudo">
+                <div class="receitas__card">
+                    <img src="assets/img/receitas/pimentoes-a-juliana.jpg" alt="pimentoes" class="receitas__card-imagem">
+                    <div class="receitas__card-corpo">
+                        <div class="receitas__card-cabecalho">
+                            <h4 class="receitas__card-titulo">Pimentões à Juliana</h4>
+                        </div>
+                        <div class="receitas__card-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</div>
+                        <button class="receitas__botao">Ver receita</button>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas__conteudo">
+                <div class="receitas__card">
+                    <img src="assets/img/receitas/prato-oriental.jpg" alt="Prato Oriental" class="receitas__card-imagem">
+                    <div class="receitas__card-corpo">
+                        <div class="receitas__card-cabecalho">
+                            <h4 class="receitas__card-titulo">Prato Oriental</h4>
+                        </div>
+                        <div class="receitas__card-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</div>
+                        <button class="receitas__botao">Ver receita</button>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas__conteudo">
+                <div class="receitas__card">
+                    <img src="assets/img/receitas/beterrabas-assadas.jpg" alt="Beterrabas assadas" class="receitas__card-imagem">
+                    <div class="receitas__card-corpo">
+                        <div class="receitas__card-cabecalho">
+                            <h4 class="receitas__card-titulo">Beterrabas Assadas</h4>
+                        </div>
+                        <div class="receitas__card-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</div>
+                        <button href="" class="receitas__botao">Ver receita</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quem-somos">
+            <h3 class="quem-somos__titulo">Quem somos</h3>
+            <p class="quem-somos__descricao">Conheça a comunidade por trás da iniciativa</p>
+            <div class="pessoas">
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--roberta"></div>
+                    <span class="pessoa__nome">Roberta</span>
+                    <span class="pessoa__funcao">Conteúdo</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--marcela"></div>
+                    <span class="pessoa__nome">Marcela</span>
+                    <span class="pessoa__funcao">Chef de cozinha</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--andreia"></div>
+                    <span class="pessoa__nome">Andréia</span>
+                    <span class="pessoa__funcao">Pequena Produtora</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            contato
+        </footer>
         
     </body>
 

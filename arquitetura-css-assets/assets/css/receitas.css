@@ -1,0 +1,87 @@
+.receitas{
+  background: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0 0 5rem;
+}
+
+.receitas__conteudo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-right: 7rem;
+  width: calc(33.3% - 7rem);
+  
+}
+
+.receitas__card{
+  border: 1px solid #c4c4c4;
+  display: grid;
+  grid-template-areas: "card-imagem" "card-corpo";
+  grid-template-columns: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.receitas__card-imagem{
+  grid-area: card-imagem;
+  height: 100%;
+  width: 100%;
+}
+
+.receitas__card-corpo{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-template-areas: "card-cabecalho" "card-descricao" "botao";
+  grid-template-rows: 50px auto auto;
+  grid-area: card-corpo;
+  background: #fdfdfd;
+  padding: 1rem;
+  
+}
+
+.receitas__card-titulo{
+  grid-area: card-cabecalho;
+  font-size: 1.4375rem;
+  padding-bottom: 1rem;
+
+}
+
+.receitas__card-descricao{
+  grid-area: card-descricao;
+  padding-bottom: 1rem;
+  font-size: 1.1875rem;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.receitas__botao{
+  grid-area: botao;
+  background: #8d0606;
+  border: none;
+  border-radius: 5px;
+  color: #fdfdfd;
+  width: 45%;
+  padding: 0.5rem;
+}
+
+.receitas__botao:hover{
+  background: #620404;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .receitas__conteudo{
+    width: calc(100% - 7rem);
+    
+  }
+
+  .receitas__botao{
+    width: 100%;
+    
+  }
+}
+

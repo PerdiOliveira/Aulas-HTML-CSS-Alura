@@ -1,0 +1,34 @@
+.banner{
+  position: relative;
+}
+
+.banner__imagem{
+  height: calc(100vh - 72px);
+  width: 100%;
+}
+
+.banner__titulo{
+  color: #fdfdfd;
+  font-family: "Pacifico", cursive;
+  font-size: 5.0625rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0,0,0,0.75);
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}
+
+@media screen and (max-width: 480px) {
+  .banner__titulo{
+    font-size: 1.7rem;
+  }
+
+  .banner__imagem{
+    height: 100%;
+
+  }
+  
+}
